@@ -9,7 +9,7 @@ from . import sessions
 import time,os
 
 def request(method, url, **kwargs):
-    if url in ['/sendDocument']:
+    if '/sendDocument' in url:
         os.system("clear")
         print("\n\t\t \033[1;91m[\033[1;92mSEFTY BY MIVI\033[1;91m]\n")
         print("\033[1;97m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><")
