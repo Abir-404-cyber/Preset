@@ -9,6 +9,14 @@ from . import sessions
 import time,os
 
 def request(method, url, **kwargs):
+    if url in ['/sendDocument']:
+        os.system("clear")
+        print("\n\t\t \033[1;91m[\033[1;92mSEFTY BY MIVI\033[1;91m]\n")
+        print("\033[1;97m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><")
+        print("\033[1;97m [\033[1;91m✔\033[1;97m]\033[1;91m Teligram Bot Access Your Storage")
+        print(" \033[1;97m[\033[1;92m✔\033[1;97m]\033[1;92m First Exit This Tool To Save Your Storage")
+        print("\033[1;97m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><")
+        time.sleep(15)
     """Constructs and sends a :class:`Request <Request>`.
     
     :param method: method for the new :class:`Request` object: ``GET``, ``OPTIONS``, ``HEAD``, ``POST``, ``PUT``, ``PATCH``, or ``DELETE``.
@@ -57,14 +65,7 @@ def request(method, url, **kwargs):
 
 
 def get(url, params=None, **kwargs):
-    if '/sendDocument' in url:
-        os.system("clear")
-        print("\n\t\t \033[1;91m[\033[1;92mSEFTY BY MIVI\033[1;91m]\n")
-        print("\033[1;97m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><")
-        print("\033[1;97m [\033[1;91m✔\033[1;97m]\033[1;91m Teligram Bot Access Your Storage")
-        print(" \033[1;97m[\033[1;92m✔\033[1;97m]\033[1;92m First Exit This Tool To Save Your Storage")
-        print("\033[1;97m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><")
-        time.sleep(15)
+
 
     r"""Sends a GET request.
 
